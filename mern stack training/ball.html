@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.parent{
+    border: 2px solid green;
+    height:420px;
+}
+
+    .ball{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: lightcoral;
+        padding: 30px;
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name:bounce;
+            animation-duration: 2.5s; 
+            animation-iteration-count: infinite;
+            animation:bounce 2.5s infinite ;
+    }
+    @keyframes bounce{
+            0%{
+                transform: translateY(0);
+            }
+            25%{
+                transform: translateY(70px);
+                background-color: blue;
+            }
+            75%{
+                transform: translateY(80px);
+                background-color: green;
+            }
+            100%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(110px);
+                background-color: red;
+            }
+        }
+</style>
+<body>
+    <div class="parent">
+    <div class="ball">jump</div>
+</div>
+</body>
+</html>
